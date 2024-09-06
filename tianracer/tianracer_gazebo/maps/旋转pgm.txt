@@ -1,0 +1,1 @@
+mogrify -rotate 90 racetrack_1.pgm

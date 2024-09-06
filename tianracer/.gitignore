@@ -1,0 +1,54 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Something else
+*.DS_Store
+*.swp
+
+
+# python compiled
+*.pyc
+
+# speciic cfg
+99.my_tianracer*.sh.em
+tianbot_office*.yaml
+tianbot_maps*.yaml
+tianracer_slam/maps/*.yaml
+tianracer_slam/maps/*.png
+tianracer_slam/maps/*.pgm
+# unused file
+imgui.ini
+.vscode
+.history
+.idea
+*/.ipynb_checkpoints/*

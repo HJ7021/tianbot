@@ -1,0 +1,34 @@
+<launch>
+    <node pkg="tianracer_navigation" type="Pure_Pursuit_mb" name="Pure_Pursuit_mb" output="screen">
+        <param name="base_shape_L" type="double" value="0.3" />
+        <param name="controller_freq" type="int" value="50" />    <!-- 控制频率 -->
+        <param name="goal_radius" type="double" value="0.2" />
+        
+        <!--  tianracer_racetrack
+        <param name="Lfw" type="double" value="1.3" />          
+        <param name="perpendicular_tolerance" type="double" value="1.4" />
+        <param name="v1" type="double" value="2.9" />           
+        <param name="v2" type="double" value="3.3" />           
+        <param name="v3" type="double" value="3.8" />           
+        <param name="kz" type="double" value="1.4" />           
+        -->
+
+        <!--  racetrack_1 
+        <param name="Lfw" type="double" value="1.2" />           
+        <param name="perpendicular_tolerance" type="double" value="10" />
+        <param name="v1" type="double" value="3.0" />           
+        <param name="v2" type="double" value="3.2" />        
+        <param name="v3" type="double" value="3.8" />       
+        <param name="kz" type="double" value="1.0" />  
+        -->
+
+        <!--  test_indoor  --> 
+        <param name="Lfw" type="double" value="1.0" />           
+        <param name="perpendicular_tolerance" type="double" value="1.0" />
+        <param name="v1" type="double" value="2.6" />           
+        <param name="v2" type="double" value="3.3" />        
+        <param name="v3" type="double" value="3.8" />       
+        <param name="kz" type="double" value="1.0" />         
+
+    </node>
+</launch>

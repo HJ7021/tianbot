@@ -1,0 +1,49 @@
+waypoints:
+- frame_id: map
+  name: point0-point1
+  pose:
+    orientation:
+      w: 0.0
+      x: 0.0
+      y: 0.0
+      z: 0.99999144883906
+    position:
+      x: -3.0
+      y: 8.5
+      z: 0.0
+- frame_id: map
+  name: point1-point2
+  pose:
+    orientation:
+      w: 0.0
+      x: 0.0
+      y: 0.0
+      z: 0.9999343895690911
+    position:
+      x: -3
+      y: 3
+      z: 0.0
+- frame_id: map
+  name: point2-point3
+  pose:
+    orientation:
+      w: -0.9999992532350104
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    position:
+      x: -5.2
+      y: -4.4
+      z: 0.0
+- frame_id: map
+  name: point3-point4
+  pose:
+    orientation:
+      w: -0.7018705038332437
+      x: 0.0
+      y: 0.0
+      z: -0.7123045667752445
+    position:
+      x: 0.0
+      y: 0.5
+      z: 0.0

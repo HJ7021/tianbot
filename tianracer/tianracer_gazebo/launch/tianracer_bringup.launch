@@ -1,0 +1,18 @@
+<!--    用来建图     -->
+<launch>
+    <arg name="world" default="raicom" />  <!-- raicom tianracer_racetrack  test_indoor  room_mini  racetrack_1 race_with_cones -->
+    <arg name="robot_name" default="tianracer" />
+    <include file="$(find tianracer_gazebo)/launch/tianracer_on_racetrack.launch" >
+        <arg name="world" value="$(arg world)" />
+            <arg name="x_pos" default="0" />
+            <arg name="y_pos" default="0" />
+            <arg name="z_pos" default="1" />
+            <arg name="R_pos" default="0" />
+            <arg name="P_pos" default="0" />
+            <arg name="Y_pos" default="-2.7" />
+        <arg name="robot_name" value="$(arg robot_name)" />
+    </include>
+    <include file="$(find tianracer_gazebo)/launch/tianracer_control.launch" >
+        <arg name="robot_name" value="$(arg robot_name)" />
+    </include>
+</launch>

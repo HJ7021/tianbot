@@ -1,0 +1,75 @@
+<launch>
+    <node pkg="tianracer_navigation" type="Pure_Pursuit" name="Pure_Pursuit" output="screen">
+        
+        <!--  raicom   -->
+        <param name="base_shape_L" type="double" value="1.3" />           
+        <param name="controller_freq" type="double" value="50" />           
+        <param name="Lfw" type="double" value="1.15" />    
+
+        <param name="perpendicular_tolerance" type="double" value="1.4" />
+        <param name="v1" type="double" value="3.0" />           
+        <param name="v2" type="double" value="3.9" />           
+        <param name="v3" type="double" value="4.35" />           
+        <param name="kz" type="double" value="0.6" />      <!-- 0.8 -->
+
+        <param name="line_start_x" value="-4.0" />
+        <param name="line_start_y" value="1.3" />
+        <param name="line_end_x" value="10.0" />
+        <param name="line_end_y" value="1.3" />
+        <param name="lap_count_max" value="6" />  <!--   3圈   -->
+
+
+        <!--  tianracer_racetrack
+        <param name="base_shape_L" type="double" value="0.7" />           
+        <param name="controller_freq" type="double" value="50" />           
+        <param name="Lfw" type="double" value="1.2" />    
+
+        <param name="perpendicular_tolerance" type="double" value="1.4" />
+        <param name="v1" type="double" value="3.0" />           
+        <param name="v2" type="double" value="3.6" />           
+        <param name="v3" type="double" value="4.0" />           
+        <param name="kz" type="double" value="0.9" />      
+
+        <param name="line_start_x" value="4.0" />
+        <param name="line_start_y" value="2.5" />
+        <param name="line_end_x" value="-7.0" />
+        <param name="line_end_y" value="2.5" />
+        <param name="lap_count_max" value="6" />
+        -->
+
+        <!--  racetrack_1 
+        <param name="base_shape_L" type="double" value="0.9" />           
+        <param name="controller_freq" type="double" value="50" />           
+        <param name="Lfw" type="double" value="2.0" />     
+
+        <param name="perpendicular_tolerance" type="double" value="10" />
+        <param name="v1" type="double" value="3.8" />           
+        <param name="v2" type="double" value="4.9" />        
+        <param name="v3" type="double" value="6.8" />       
+        <param name="kz" type="double" value="0.5" />  
+
+        <param name="line_start_x" value="-2.0" />
+        <param name="line_start_y" value="3.0" />
+        <param name="line_end_x" value="12.0" />
+        <param name="line_end_y" value="3.0" />
+        <param name="lap_count_max" value="4" />      -->
+
+        <!--  test_indoor   
+        <param name="base_shape_L" type="double" value="0.75" />           
+        <param name="controller_freq" type="double" value="50" />           
+        <param name="Lfw" type="double" value="1.15" />     
+
+        <param name="perpendicular_tolerance" type="double" value="1.3" />
+        <param name="v1" type="double" value="2.9" />           
+        <param name="v2" type="double" value="3.3" />        
+        <param name="v3" type="double" value="4.0" />       
+        <param name="kz" type="double" value="0.85" />        
+
+        <param name="line_start_x" value="2.0" />
+        <param name="line_start_y" value="1.5" />
+        <param name="line_end_x" value="-7.0" />
+        <param name="line_end_y" value="1.5" />
+        <param name="lap_count_max" value="6" />      --> 
+
+    </node>
+</launch>

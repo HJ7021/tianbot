@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="tianracer_navigation" type="plan" name="plan" output="screen"/>
+</launch>

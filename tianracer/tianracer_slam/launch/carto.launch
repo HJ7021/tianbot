@@ -1,0 +1,22 @@
+<launch>
+    <node name="cartographer_node" pkg="cartographer_ros" type="cartographer_node"
+          args="-configuration_directory $(find tianracer_slam)/param
+                -configuration_basename 2d_scan.lua">
+        <remap from="echoes" to="horizontal_laser_2d" />
+        <remap from="scan" to="tianracer/scan" />
+        <remap from="/odom" to="/tianracer/odom"/>
+        <remap from="/imu" to="/tianracer/imu"/>
+    </node>
+
+    <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+          type="cartographer_occupancy_grid_node" args="-resolution 0.1">
+        <remap from="map"    to="carto_map" />
+
+    </node>
+
+    <node name="rotate_map_node" pkg="xju_slam" type="rotate_map" respawn="true" />
+
+    <node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering" respawn="true" />
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find tianracer_slam)/maps/carto.rviz" />
+</launch>
